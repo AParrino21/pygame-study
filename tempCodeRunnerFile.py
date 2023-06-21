@@ -1,0 +1,2 @@
+
+WINDOW_HEIGHT = 300
