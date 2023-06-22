@@ -76,16 +76,16 @@ while running:
 
         # move the snake
         if event.type == pygame.KEYDOWN:
-            if event.key == pygame.K_a:
+            if event.key == pygame.K_a or event.key == pygame.K_LEFT:
                 snake_dx = -1*SNAKE_SIZE
                 snake_dy = 0
-            if event.key == pygame.K_d:
+            if event.key == pygame.K_d or event.key == pygame.K_RIGHT:
                 snake_dx = 1*SNAKE_SIZE
                 snake_dy = 0
-            if event.key == pygame.K_w:
+            if event.key == pygame.K_w or event.key == pygame.K_UP:
                 snake_dx = 0
                 snake_dy = -1*SNAKE_SIZE
-            if event.key == pygame.K_s:
+            if event.key == pygame.K_s or event.key == pygame.K_DOWN:
                 snake_dx = 0
                 snake_dy = 1*SNAKE_SIZE      
 
