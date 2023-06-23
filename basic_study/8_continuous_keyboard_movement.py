@@ -8,7 +8,7 @@ WINDOW_WIDTH = 1200
 WINDOW_HEIGHT = 800
 display_surface = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
 
-pygame.display.set_caption("RESTRICTED MOVEMENT!")
+pygame.display.set_caption("CONTINUOUS MOVEMENT!")
 
 #set FPS and Clock
 FPS = 60
@@ -18,7 +18,7 @@ clock = pygame.time.Clock()
 VELOCITY = 5
 
 #load in image
-curly = pygame.image.load('curly.png')
+curly = pygame.image.load('basic_study/curly.png')
 curly_rect = curly.get_rect()
 curly_rect.center = (WINDOW_WIDTH//2, WINDOW_HEIGHT//2)
 
@@ -34,13 +34,13 @@ while running:
     keys = pygame.key.get_pressed()
 
     #move the image continuously
-    if keys[pygame.K_a] and curly_rect.left > 0:
+    if keys[pygame.K_LEFT]:
         curly_rect.x -= VELOCITY
-    if keys[pygame.K_d] and curly_rect.right < WINDOW_WIDTH:
+    if keys[pygame.K_RIGHT]:
         curly_rect.x += VELOCITY
-    if keys[pygame.K_w] and curly_rect.top > 0:
+    if keys[pygame.K_UP]:
         curly_rect.y -= VELOCITY
-    if keys[pygame.K_s] and curly_rect.bottom < WINDOW_HEIGHT:
+    if keys[pygame.K_DOWN]:
         curly_rect.y += VELOCITY                        
 
     # fill the display surface to cover old images

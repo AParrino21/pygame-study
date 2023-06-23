@@ -12,7 +12,7 @@ pygame.display.set_caption("BLITTING IMAGES!")
 
 # create images returns a surface object with the image on it
 # we can then get the rect of the surface and use the rect to position the image
-curly = pygame.image.load("curly.png")
+curly = pygame.image.load("basic_study/curly.png")
 curly = pygame.transform.scale(curly, (curly.get_width()))
 curly_rect = curly.get_rect()
 curly_rect.center = (WINDOW_WIDTH//2, WINDOW_HEIGHT//2)

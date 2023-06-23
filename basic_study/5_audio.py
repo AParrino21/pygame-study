@@ -11,8 +11,8 @@ display_surface = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
 pygame.display.set_caption("AUDIO!")
 
 #Load sound effects
-sound1 = pygame.mixer.Sound('sound.wav')
-sound2 = pygame.mixer.Sound('sound2.wav')
+sound1 = pygame.mixer.Sound('basic_study/sound.wav')
+sound2 = pygame.mixer.Sound('basic_study/sound2.wav')
 
 #play the sound effects
 sound1.play()
@@ -25,7 +25,7 @@ sound2.set_volume(.1)
 sound2.play()
 
 #load background music
-pygame.mixer.music.load('soundBG.wav')
+pygame.mixer.music.load('basic_study/soundBG.wav')
 #play and stop the music(how many time to play: -1 is infinite and 0.0 is start time)
 pygame.mixer.music.play(-1, 0.0)
 # play for 5 seconds then stop

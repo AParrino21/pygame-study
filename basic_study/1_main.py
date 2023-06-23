@@ -10,6 +10,9 @@ display_surface = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
 
 pygame.display.set_caption("GAME!")
 
+# set FPS and clock
+FPS = 60
+clock = pygame.time.Clock()
 
 # main game loop
 running = True
@@ -20,6 +23,7 @@ while running:
 
     #update the display
     pygame.display.update()
+    clock.tick(FPS)
 
 # end the game
 pygame.quit()

@@ -11,7 +11,7 @@ display_surface = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
 pygame.display.set_caption("MOUSE MOVEMENT!")
 
 #load in image
-curly = pygame.image.load('curly.png')
+curly = pygame.image.load('basic_study/curly.png')
 curly_rect = curly.get_rect()
 curly_rect.center = (WINDOW_WIDTH//2, WINDOW_HEIGHT//2)
 
