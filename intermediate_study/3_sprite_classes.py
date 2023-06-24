@@ -19,7 +19,7 @@ class Monster(pygame.sprite.Sprite):
     """A simple class to represent a spooky monster"""
     def __init__(self, x, y):
         super().__init__()
-        self.image = pygame.image.load('intermediate/blue_monster.png')
+        self.image = pygame.image.load('intermediate_study/blue_monster.png')
         self.rect = self.image.get_rect()
         self.rect.topleft = (x, y)
         self.velocity = random.randint(1,5)
